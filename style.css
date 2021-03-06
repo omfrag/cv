@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.4    ;
+    color: black;
+}
+body{
+    background: linear-gradient(to right bottom, rgb(149, 205, 212) , rgb(0, 0, 255));
+}
+
+.content{
+    background-color: white;
+    margin: 50px auto;
+    width: 90%;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px gray;
+    padding: 15px;
+}
+h1, h1>span{
+    font-size: 40px;
+}
+h2{
+    margin-top: 30px;
+    color: rgb(7, 7, 95);
+}
+h5{
+    margin-bottom: 25px;
+}
+h6{
+    display: inline-block;
+}
+.part{
+    display: flex;
+    margin-top: 15px;
+    width: 100%;
+}
+.header{
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    margin-left: 0;
+    border-bottom: 3px solid black;
+    padding-right: 7%;
+    padding-bottom: 10px;
+    margin-bottom: 70px;
+}
+.header span{
+    color: rgb(7, 7, 95);
+}
+.header ul {
+    list-style: none;
+}
+.contact{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.profilePic{
+    width: 200px;
+    height: 200px;
+    background: url("hacking.webp") center no-repeat;
+    background-size: 150%;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+}
+.competence{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-gap: 20px;
+    padding-left: 20px;
+}
+.perf{
+    position: relative;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.under{
+    width: 100px;
+    height: 10px;
+    background-color: rgb(206, 203, 203);
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.on{
+    height: 100%;
+    background-color: rgb(7, 7, 95);
+    border-radius: 10px;
+}
+.Al{
+    width: 100%;
+}
+.An{
+    width: 80%;
+}
+.Es{
+    width: 50%;
+}
+
+/*=========================================*/
+.formation{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+@media (max-width: 1100px){
+    h2{
+        font-size: 25px;
+    }
+    .header{
+    }
+    .header ul li, .header h5{
+        font-size: 20px;
+    }
+    .profilePic{
+        position: static;
+    }
+    .part{
+        flex-direction: column;
+    }
+    .competence{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-gap: 20px;
+        font-size: 20px;
+    }
+    .under{
+    }
+    .formation{
+        font-size: 20px;
+    }
+
+}
