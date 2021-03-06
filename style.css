@@ -111,6 +111,7 @@ h6{
         font-size: 25px;
     }
     .header{
+        width: 100%;
     }
     .header ul li, .header h5{
         font-size: 20px;
